@@ -90,7 +90,7 @@ storyData.forEach(text=>{
 
 // ---------- gallery data (real photos, injected as data URIs) ----------
 const galleryData = [
-  {src:"9b8cec80-58df-4dba-9cb4-df122322ad21.jpg", caption:"One of my favourite memories ❤️"},
+  {src:"9b8cec80-58df-4dba-9cb4-df122322ad21.JPG", caption:"One of my favourite memories ❤️"},
   {src:"a9c1b9bd-1374-473b-bbb4-7af788f88655__2_.jpg", caption:"You were so cute here."},
   {src:"IMG_2808.jpg", caption:"Another moment I'll never forget."},
   {src:"IMG_5948.jpg", caption:"Just us, being us."},
