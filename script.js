@@ -91,10 +91,10 @@ storyData.forEach(text=>{
 // ---------- gallery data (real photos, injected as data URIs) ----------
 const galleryData = [
   {src:"9b8cec80-58df-4dba-9cb4-df122322ad21.JPG", caption:"One of my favourite memories ❤️"},
-  {src:"a9c1b9bd-1374-473b-bbb4-7af788f88655__2_.jpg", caption:"You were so cute here."},
-  {src:"IMG_2808.jpg", caption:"Another moment I'll never forget."},
-  {src:"IMG_5948.jpg", caption:"Just us, being us."},
-  {src:"IMG_6020.png", caption:"Flowers, and you. My favourite kind of Sunday."},
+  {src:"a9c1b9bd-1374-473b-bbb4-7af788f88655__2_.JPG", caption:"You were so cute here."},
+  {src:"IMG_2808.JPG", caption:"Another moment I'll never forget."},
+  {src:"IMG_5948.JPG", caption:"Just us, being us."},
+  {src:"IMG_6020.PNG", caption:"Flowers, and you. My favourite kind of Sunday."},
   {src:"IMG_7095__1_.png", caption:"The Holi chaos 😂"},
   {src:"assets/photo08.jpg", caption:"Dressed up, still my favourite person."},
   {src:"assets/photo07.jpg", caption:"That clay-pot afternoon ❤️"}
