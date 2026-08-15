@@ -96,8 +96,8 @@ const galleryData = [
   {src:"IMG_5948.JPG", caption:"Just us, being us."},
   {src:"IMG_6020.PNG", caption:"Flowers, and you. My favourite kind of Sunday."},
   {src:"IMG_7095__1_.png", caption:"The Holi chaos 😂"},
-  {src:"assets/photo08.jpg", caption:"Dressed up, still my favourite person."},
-  {src:"assets/photo07.jpg", caption:"That clay-pot afternoon ❤️"}
+  {src:"IMG_7278.JPG", caption:"Dressed up, still my favourite person."},
+  {src:"IMG_8359__2_.png", caption:"That clay-pot afternoon ❤️"}
 ];
 const galleryGrid = document.getElementById('galleryGrid');
 galleryData.forEach(item=>{
