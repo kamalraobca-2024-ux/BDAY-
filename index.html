@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Happy Birthday, My Love ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ambient-hearts"></div>
+
+<!-- ================= OPENING ================= -->
+<section id="opening">
+  <div class="eyebrow reveal in">Happy Birthday, My Love ♡</div>
+  <div class="sub reveal in">I made a little something for you...</div>
+  <div class="envelope-wrap" id="envelope">
+    <div class="env-glow"></div>
+    <div class="envelope">
+      <div class="letter-peek"></div>
+      <div class="env-heart">♡</div>
+      <div class="env-body"></div>
+      <div class="env-flap"></div>
+    </div>
+  </div>
+  <button class="open-btn" id="openBtn">Open My Letter 💌</button>
+  <div class="scroll-hint" id="scrollHint" style="opacity:0;">scroll down ↓</div>
+</section>
+
+<!-- ================= LETTER ================= -->
+<section id="letter-section">
+  <div class="letter-card reveal">
+    <h2 class="letter-heading script">My Dearest Love,</h2>
+    <div class="divider">♡ ───────── ♡</div>
+    <div class="letter-body" id="letterBody">
+      <span class="typed-line">Today isn't just another birthday.</span>
+      <span class="typed-line">It's a celebration of the person who quietly became my favourite part of every single day.</span>
+      <span class="typed-line">I don't think you fully know how much light you bring into small, ordinary moments —</span>
+      <span class="typed-line">the way you laugh at your own jokes before you finish telling them,</span>
+      <span class="typed-line">the way you make even boring days feel like something worth remembering.</span>
+      <span class="typed-line">So today, I just want you to slow down for a minute,</span>
+      <span class="typed-line">and let me remind you how loved you are.</span>
+    </div>
+    <div class="letter-sign">— Yours, always ♡</div>
+  </div>
+</section>
+
+<!-- ================= OUR STORY ================= -->
+<section id="story">
+  <h2 class="section-title reveal">Our Little Story ♡</h2>
+  <p class="section-sub reveal">A few pieces of us, so far</p>
+  <div class="timeline" id="timelineGrid"></div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <h2 class="section-title reveal">Our Little Memories ♡</h2>
+  <p class="section-sub reveal">A few moments I never want to forget</p>
+  <div class="polaroid-grid" id="galleryGrid"></div>
+</section>
+
+<div id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img class="lightbox-photo" id="lightboxPhoto" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<!-- ================= THINGS I LOVE ================= -->
+<section id="love-list">
+  <h2 class="section-title reveal">Things I Love About You ♡</h2>
+  <p class="section-sub reveal">Just a few. There isn't room for all of them here.</p>
+  <div class="love-grid" id="loveGrid"></div>
+</section>
+
+<!-- ================= FINAL + SONG ================= -->
+<section id="final">
+  <div id="petalWrap"></div>
+  <p class="final-line" data-order="1">Before you go...</p>
+  <p class="final-line" data-order="2">there's something I want you to know.</p>
+  <p class="final-line" data-order="3">If I could live all these memories again...</p>
+  <p class="final-line big" data-order="4">I'd still choose you.</p>
+  <p class="final-line script" data-order="5">Every single time. ♡</p>
+
+  <div class="player-card" id="playerCard">
+    <div class="player-disc" id="playerDisc"></div>
+    <div class="player-info">
+      <div class="player-title">Tujhe Kitna Chahne Lage ♡</div>
+      <div class="player-wave" id="playerWave">
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div>
+      </div>
+      <div class="tap-hint" id="tapHint">Tap to play our song ♡</div>
+    </div>
+    <button class="play-btn" id="playBtn">▶</button>
+  </div>
+  <audio id="ourSong" data-src="assets/song.mp3" preload="none" loop></audio>
+</section>
+
+<!-- ================= CAKE FINALE ================= -->
+<section id="cake-section">
+  <p class="cake-heading reveal">One last thing... 🎂</p>
+  <p class="cake-sub reveal">Make a wish, birthday girl. ♡</p>
+
+  <div class="cake-wrap reveal" id="cakeWrap">
+    <div class="cake-glow"></div>
+    <svg id="cakeSvg" viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="clipLeft"><rect x="0" y="0" width="200" height="380"/></clipPath>
+        <clipPath id="clipRight"><rect x="200" y="0" width="200" height="380"/></clipPath>
+        <linearGradient id="tier1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFE3F0"/><stop offset="100%" stop-color="#FFB6D5"/>
+        </linearGradient>
+        <linearGradient id="tier2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFD6E7"/><stop offset="100%" stop-color="#FF9EC7"/>
+        </linearGradient>
+        <linearGradient id="tier3" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF0F6"/><stop offset="100%" stop-color="#FFC2DD"/>
+        </linearGradient>
+      </defs>
+
+      <ellipse cx="200" cy="345" rx="130" ry="16" fill="#E94F91" opacity="0.18"/>
+
+      <g id="cakeArt">
+        <!-- plate -->
+        <ellipse cx="200" cy="332" rx="145" ry="14" fill="#ffffff"/>
+        <ellipse cx="200" cy="328" rx="145" ry="14" fill="#fff5fa" stroke="#F8A9C4" stroke-width="2"/>
+
+        <!-- tier 1 (bottom) -->
+        <rect x="90" y="255" width="220" height="70" rx="14" fill="url(#tier1)"/>
+        <path d="M90 262 Q100 248 112 262 Q124 248 136 262 Q148 248 160 262 Q172 248 184 262 Q196 248 208 262 Q220 248 232 262 Q244 248 256 262 Q268 248 280 262 Q292 248 300 262 L300 268 L90 268 Z" fill="#fff"/>
+        <circle cx="120" cy="298" r="5" fill="#fff" opacity="0.85"/>
+        <circle cx="200" cy="304" r="5" fill="#fff" opacity="0.85"/>
+        <circle cx="280" cy="298" r="5" fill="#fff" opacity="0.85"/>
+        <text x="150" y="304" font-size="13" opacity="0.9">♡</text>
+        <text x="230" y="298" font-size="13" opacity="0.9">♡</text>
+
+        <!-- tier 2 (middle) -->
+        <rect x="120" y="185" width="160" height="72" rx="12" fill="url(#tier2)"/>
+        <path d="M120 192 Q130 178 140 192 Q150 178 160 192 Q170 178 180 192 Q190 178 200 192 Q210 178 220 192 Q230 178 240 192 Q250 178 260 192 Q270 178 280 192 L280 198 L120 198 Z" fill="#fff"/>
+        <circle cx="150" cy="228" r="4.5" fill="#fff" opacity="0.9"/>
+        <circle cx="200" cy="234" r="4.5" fill="#fff" opacity="0.9"/>
+        <circle cx="250" cy="228" r="4.5" fill="#fff" opacity="0.9"/>
+
+        <!-- tiny flowers on tier2 -->
+        <g transform="translate(140,220)">
+          <circle cx="-4" cy="0" r="4" fill="#FF6FAE"/><circle cx="4" cy="0" r="4" fill="#FF6FAE"/>
+          <circle cx="0" cy="-4" r="4" fill="#FF6FAE"/><circle cx="0" cy="4" r="4" fill="#FF6FAE"/>
+          <circle cx="0" cy="0" r="3.5" fill="#fff"/>
+        </g>
+        <g transform="translate(260,222)">
+          <circle cx="-4" cy="0" r="4" fill="#E94F91"/><circle cx="4" cy="0" r="4" fill="#E94F91"/>
+          <circle cx="0" cy="-4" r="4" fill="#E94F91"/><circle cx="0" cy="4" r="4" fill="#E94F91"/>
+          <circle cx="0" cy="0" r="3.5" fill="#fff"/>
+        </g>
+
+        <!-- tier 3 (top) -->
+        <rect x="150" y="128" width="100" height="62" rx="10" fill="url(#tier3)"/>
+        <path d="M150 134 Q158 122 166 134 Q174 122 182 134 Q190 122 198 134 Q206 122 214 134 Q222 122 230 134 Q238 122 246 134 L246 140 L150 140 Z" fill="#fff"/>
+        <g transform="translate(175,162)">
+          <circle cx="-3.5" cy="0" r="3.5" fill="#FF6FAE"/><circle cx="3.5" cy="0" r="3.5" fill="#FF6FAE"/>
+          <circle cx="0" cy="-3.5" r="3.5" fill="#FF6FAE"/><circle cx="0" cy="3.5" r="3.5" fill="#FF6FAE"/>
+          <circle cx="0" cy="0" r="3" fill="#fff"/>
+        </g>
+        <g transform="translate(222,166)">
+          <circle cx="-3.5" cy="0" r="3.5" fill="#E94F91"/><circle cx="3.5" cy="0" r="3.5" fill="#E94F91"/>
+          <circle cx="0" cy="-3.5" r="3.5" fill="#E94F91"/><circle cx="0" cy="3.5" r="3.5" fill="#E94F91"/>
+          <circle cx="0" cy="0" r="3" fill="#fff"/>
+        </g>
+
+        <!-- candles -->
+        <g>
+          <rect x="182" y="98" width="6" height="30" rx="2" fill="#FF6FAE"/>
+          <rect x="198" y="92" width="6" height="36" rx="2" fill="#E94F91"/>
+          <rect x="214" y="98" width="6" height="30" rx="2" fill="#FF6FAE"/>
+        </g>
+        <g class="flame" transform="translate(185,98)">
+          <path d="M0 0 C4 -8 4 -14 0 -18 C-4 -14 -4 -8 0 0 Z" fill="#FFC65C"/>
+          <path d="M0 -2 C2.4 -7 2.4 -10 0 -13 C-2.4 -10 -2.4 -7 0 -2 Z" fill="#FF914D"/>
+        </g>
+        <g class="flame" transform="translate(201,92)">
+          <path d="M0 0 C4 -8 4 -14 0 -18 C-4 -14 -4 -8 0 0 Z" fill="#FFC65C"/>
+          <path d="M0 -2 C2.4 -7 2.4 -10 0 -13 C-2.4 -10 -2.4 -7 0 -2 Z" fill="#FF914D"/>
+        </g>
+        <g class="flame" transform="translate(217,98)">
+          <path d="M0 0 C4 -8 4 -14 0 -18 C-4 -14 -4 -8 0 0 Z" fill="#FFC65C"/>
+          <path d="M0 -2 C2.4 -7 2.4 -10 0 -13 C-2.4 -10 -2.4 -7 0 -2 Z" fill="#FF914D"/>
+        </g>
+      </g>
+
+      <g class="cake-half" id="cakeLeft" clip-path="url(#clipLeft)">
+        <use href="#cakeArt"/>
+      </g>
+      <g class="cake-half" id="cakeRight" clip-path="url(#clipRight)">
+        <use href="#cakeArt"/>
+      </g>
+    </svg>
+
+    <svg class="knife" id="knifeSvg" viewBox="0 0 60 140" width="70" style="left:50%; top:-40px; margin-left:-35px;">
+      <rect x="24" y="70" width="12" height="60" rx="4" fill="#E94F91"/>
+      <path d="M18 0 L42 0 L36 74 L24 74 Z" fill="#E8E8E8" stroke="#C9C9C9" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <p class="tap-cake-hint" id="tapCakeHint">Tap the cake 🎂</p>
+
+  <div id="cakeFinalLines">
+    <p class="final-line big" data-order="1">Happy Birthday, My Love! 🎂💕</p>
+    <p class="final-line script" data-order="2">Now make your wish... ❤️</p>
+    <p class="final-line" data-order="3">I hope this year gives you everything you've ever wished for...</p>
+    <p class="final-line" data-order="4">And maybe... a little more of me too. 😂❤️</p>
+    <p class="final-line big" data-order="5">I love you. Happy Birthday, Baby. ♡</p>
+  </div>
+</section>
+
+<footer>made with ♡ for you</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
